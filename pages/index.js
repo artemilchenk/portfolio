@@ -330,14 +330,6 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Можу працювати без вихідних
-                                    </div>
-                                    <div>
-                                        Так
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
                                         Одружений
                                     </div>
                                     <div>
