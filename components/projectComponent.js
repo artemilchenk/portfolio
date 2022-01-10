@@ -9,6 +9,7 @@ export const ProjectComponent = ({
                                      youtubeDomain,
                                      projectDomain,
                                      admin,
+                                     tek,
                                      img,
                                      id
                                  }) => {
@@ -36,11 +37,13 @@ export const ProjectComponent = ({
                         <Link href={`https://www.${youtubeDomain}`}>
                             <a>{youtubeDomain}</a>
                         </Link>
-                        {/*<Link href={`https://www.${admin}`}>
-                            <a>{admin}</a>
-                        </Link>*/}
-
                     </div>
+                </div>
+                <div className={'text-sm text-gray-500'}>
+                    Технології:
+                </div>
+                <div className={'text-sm'}>
+                    {tek}
                 </div>
 
                 <div className={'h-full flex items-end'}>
