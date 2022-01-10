@@ -112,10 +112,10 @@ export default function Home() {
                                 Full Stack Developer
                             </div>
                             <ButtonComponent text={'Про мене'} id={'#aboutMe'}/>
-                            <div className={'font-poppins m-2 text-[#550708]'}>
+                            <div className={'font-poppins m-2 text-red-800'}>
                                 093 214 33 60
                             </div>
-                            <div className={'font-poppins m-2 text-[#550708]'}>
+                            <div className={'font-poppins m-2 text-red-800'}>
                                 artemilchenko999@gmail.com
                             </div>
                         </div>
@@ -131,33 +131,42 @@ export default function Home() {
 
                             <div className={'bg-[#1c1d25] rounded-lg mt-10 p-5 flex justify-between'}>
                                 <Link href="https://www.facebook.com/profile.php?id=100004528778719">
-                                    <a><div
-                                        className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                                            <path
-                                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/>
-                                        </svg>
-                                    </div></a>
+                                    <a>
+                                        <div
+                                            className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                                 viewBox="0 0 24 24">
+                                                <path
+                                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/>
+                                            </svg>
+                                        </div>
+                                    </a>
                                 </Link>
 
                                 <Link href="https://www.instagram.com/artem__ilchenko/">
-                                    <a><div
-                                        className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                                            <path
-                                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                        </svg>
-                                    </div></a>
+                                    <a>
+                                        <div
+                                            className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                                 viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                            </svg>
+                                        </div>
+                                    </a>
                                 </Link>
 
                                 <Link href="https://github.com/artemilchenk">
-                                    <a><div
-                                        className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                                            <path
-                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                        </svg>
-                                    </div></a>
+                                    <a>
+                                        <div
+                                            className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                                 viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                            </svg>
+                                        </div>
+                                    </a>
                                 </Link>
 
                             </div>
@@ -173,45 +182,193 @@ export default function Home() {
                     {/*=====Про мене текст======*/}
                     <div className={'col-span-4 md:col-span-3 mr-5'}>
 
-                        <div className={'text-left text-sm md:text-lg border-b-2 border-red-700 font-serif mb-5 pb-5'}>
-                            Привіт, мене звати Артем, мені 29. У 2014 році закінчив, на той час, Чернігівський Державний
-                            Інститут Економіки та Управління(ЧДІУ) за спеціальністю Економічна Кібернетика. Але
-                            насправді нічого спільного з кібернетикою, за виключенням поодинокої теорії, це не мало,
-                            головним направленням була економіка, до якої я проявляв нуль цікавості і впринципі закінчив
-                            інститут, 5 років змушуючи себе робити те, що насправді мені жесть як не хотілось. Чому тоді
-                            вступив до цього вузу? Насправді ще зі школи(де я показував хороші результати по алгебрі та
-                            геометріі) я думав про Політєх. <p>І от, набравши на незалежному тестуванні 177 балів по
-                            математиці, я відправляюсь в Чернігівський Державний Технологічний Університет і розумію, що
-                            з такими балами на безкоштовне навчання я можу розраховувати тільки на спецальність: Інженер
-                            Металорізального Обладнання(робота за верстатами), куди і вступаю, із заздрістю дивлячись на
-                            тих хто пройшов на комп'ютерну інженерію. Після року навчання там, я розумію, що це взагалі
-                            не моє( хоча кількість сил які буди вкладені в цей рік була колосальна, часу щоб передихнути
-                            практично не було, загруженість божевільна, ми працювали зранку до ночі, і тоді я зрозумів що є
-                            таке Політєх) та переводжусь в хочаб шось наближене до IT. Це і став ЧДІУ, але і там, як я
-                            вже написав, це було не те, що мені потрібно.</p> Закінчивши інститут, я розумію, що це були
-                            5 років внікуди, просто 5 років тусовки. І відповідно, так як мені було "ціково"- так же я і
-                            вчився, тому спеціаліст з мене був так собі і тому роботу мені знайти по цпецальності було
-                            практично нереально. Жити було теба за щось і я йду в будівницвто, де проводжу до 5 років
-                            свого життя, займаючись нелюбимиою справою, просто щоб себе забезпечити. І от прихдить час,
-                            коли я розумію, що більше так не можу, я більше не можу робити шось тільки заради грошей, я
-                            хочу ходити на роботу не як на каторгру, а як на свято: в плані я хочу жити роботою хочу шоб
-                            горіли очі від того чим я замаюсь щоб робота перетворилась в пристрасть.
-                            <p>Я пам'ятаю зима 2020 - час коли я
-                            відкрив перше ютуб відоео "html за час" шось таке. І з цього моменту починається моя подорож
-                            в новий світ, мій новий шлях і нове життя. Тоді я доживав свої останні заощадження з
-                            будівництва, грошей на курси в мене попросту не було і я розумів, що змушений буду сам себе
-                            зліпити і я памьятаю, коли почав це все вивчати, особливо, коли справа дійшла до js, мені
-                            взагалі було нічого не зрозуміло, але дуже цікаво, а моє его говорило: Артем, досить! Досить
-                            не вірити в себе, що ти не зможеш, що ти не достатньо розумний для цього, доведи собі, що ти
-                            помилявся і шо ці роки не віри в себе- це тільки роки, ти ще з дитинства хотів і мріяв про
-                            це, доведи, що це все- було немароно! Так, мені не вистачало наставника, який розжує до
-                            атомів та покладе в рот, і тому це все приходилось робити самому, витрачаючи на це набагато
-                            більше часу, хоча я вже багато чого пізнав в цій професії, але я ще далеко не профсіонал і ще
-                            багато чого не знаю, але я кожного дня пізнаю щось нове та вдосконалююсь.Я впевнений, що
-                            хочу присвятити цьому залишок свого життя.</p> У вашій компанії я мрію знайти людей-колег-однодумців, з якими
-                            я буду обмінюватись доствідом, робити щось спільне, створювати нові продукти, придумувати щось
-                            нове, а може і взагалі змінити всю гру. Дякую, що витратили свій час на мене. Сподіваюсь,
-                            я зможу стати частиною Вашої великої команди!
+                        <div className={'mr-auto ml-auto text-left text-sm md:text-lg border-b-2 border-red-700 font-serif mb-5 pb-5'}>
+                            <div className={'max-w-2xl mr-auto ml-auto'}>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Освіта
+                                    </div>
+                                    <div>
+                                        Вища (ЧДІЕУ)
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Спеціальність
+                                    </div>
+                                    <div>
+                                        Економічна Кібернетика
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Працював офіційно
+                                    </div>
+                                    <div>
+                                        Ні
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Курси
+                                    </div>
+                                    <div>
+                                        Ні
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Самовивчення
+                                    </div>
+                                    <div>
+                                        Так
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Джерела інформації
+                                    </div>
+                                    <div>
+                                        Ютуб, Документація, Stack Overflow
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Мова програмування
+                                    </div>
+                                    <div>
+                                        JavaScript/TypeScript
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Позиція
+                                    </div>
+                                    <div>
+                                        Full Stack Developer
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div >
+                                        Фронтенд/Бекенд
+                                    </div>
+                                    <div>
+                                        70%/30% відповідно
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Бекенд(корінь)
+                                    </div>
+                                    <div>
+                                        Node
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Фронтенд(корінь)
+                                    </div>
+                                    <div>
+                                        React
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Віддаю перевагу функціональним компонентам
+                                    </div>
+                                    <div>
+                                        Так
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Готовий адаптуватись до різних технологій
+                                    </div>
+                                    <div>
+                                        Так
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Можу спокійно жити, знаючи, що проблема не вирішена
+                                    </div>
+                                    <div>
+                                        Ні
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Роль JavaScript в житті
+                                    </div>
+                                    <div>
+                                        Першочергова
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Залежність від кодінга
+                                    </div>
+                                    <div>
+                                        Так
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                       Отримую завдоволення від робочого процесу
+                                    </div>
+                                    <div>
+                                        Так
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                       Можу працювати без вихідних
+                                    </div>
+                                    <div>
+                                        Так
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Можу працювати без вихідних
+                                    </div>
+                                    <div>
+                                        Так
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Одружений
+                                    </div>
+                                    <div>
+                                        Ні
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Діти
+                                    </div>
+                                    <div>
+                                        Ні
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Бачу життя без кодінга
+                                    </div>
+                                    <div>
+                                        Ні
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Готовий розвиватись та приносити користь компанії
+                                    </div>
+                                    <div>
+                                        Так
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div className={'text-center text-xl p-5'}>
@@ -377,18 +534,23 @@ export default function Home() {
 
                     <div className={'col-span-4 grid grid-cols-4 mt-20 lg:space-x-5 px-5'}>
 
-                        <ProjectComponent id={'MetaStore'} projectName={'MetaStore'} tek={'Next.js, Firebase, Tailwindcss'}
+                        <ProjectComponent id={'MetaStore'} projectName={'MetaStore'}
+                                          tek={'Next.js, Firebase, Tailwindcss'}
                                           description={'Магазин металевих конструкцій'} img={metastore}
-                                          projectDomain={'metastoree.online'} admin={'metastoree.online/admin'} youtubeDomain={''}
+                                          projectDomain={'metastoree.online'} admin={'metastoree.online/admin'}
+                                          youtubeDomain={''}
                                           setProjectName={setProjectName}/>
-                        <ProjectComponent id={'Soroka'} projectName={'Soroka'} description={'Месенджер'} img={soroka} tek={'NextJS, Firebase, StyledComponents'}
+                        <ProjectComponent id={'Soroka'} projectName={'Soroka'} description={'Месенджер'} img={soroka}
+                                          tek={'NextJS, Firebase, StyledComponents'}
                                           projectDomain={'sorokaa.xyz'}
                                           youtubeDomain={''} setProjectName={setProjectName}/>
-                        <ProjectComponent id={'Rumor'} projectName={'Rumor'} description={'Соціальна мережа'} tek={'React, ApolloGraphql, MongoDB'}
+                        <ProjectComponent id={'Rumor'} projectName={'Rumor'} description={'Соціальна мережа'}
+                                          tek={'React, ApolloGraphql, MongoDB'}
                                           img={rumor}
                                           projectDomain={'rumorr.live'} youtubeDomain={''}
                                           setProjectName={setProjectName}/>
-                        <ProjectComponent id={'MusicSpace'} projectName={'MusicSpace'} description={'Музична площадка'} tek={'Next.js, NestJS, MongoDB'}
+                        <ProjectComponent id={'MusicSpace'} projectName={'MusicSpace'} description={'Музична площадка'}
+                                          tek={'Next.js, NestJS, MongoDB'}
                                           img={musicspace}
                                           projectDomain={'musicspace.store'} youtubeDomain={''}
                                           setProjectName={setProjectName}/>
@@ -401,42 +563,48 @@ export default function Home() {
                     className={'flex-col justify-center items-center md:flex-row bg-[#1c1d25] rounded-lg p-5 flex justify-between'}>
 
                     <Link href="https://www.facebook.com/profile.php?id=100004528778719">
-                        <a><div
-                            className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/>
-                            </svg>
-                        </div></a>
+                        <a>
+                            <div
+                                className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/>
+                                </svg>
+                            </div>
+                        </a>
                     </Link>
 
-                    <div className={'text-[#550708] m-2 md:m-0 flex justify-center items-center'}>
+                    <div className={'text-red-800 m-2 md:m-0 flex justify-center items-center'}>
                         <div>artemilchenko999@gmail.com</div>
                     </div>
 
                     <Link href="https://www.instagram.com/artem__ilchenko/">
-                        <a><div
-                            className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </div></a>
+                        <a>
+                            <div
+                                className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </div>
+                        </a>
                     </Link>
 
-                    <div className={'text-[#550708] m-2 md:m-0 flex justify-center items-center'}>
+                    <div className={'text-red-800 m-2 md:m-0 flex justify-center items-center'}>
                         <div>093 214 33 60</div>
                     </div>
 
 
                     <Link href="https://github.com/artemilchenk">
-                        <a><div
-                            className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </div></a>
+                        <a>
+                            <div
+                                className={'bg-[#550708] rounded-full w-max cursor-pointer transition-all duration-500 hover:bg-white hover:transition-all hover:duration-500'}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                        </a>
                     </Link>
                 </div>
             </footer>
