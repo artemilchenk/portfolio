@@ -211,38 +211,6 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Працював офіційно
-                                    </div>
-                                    <div>
-                                        Ні
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Курси
-                                    </div>
-                                    <div>
-                                        Ні
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Самовивчення
-                                    </div>
-                                    <div>
-                                        Так
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Джерела інформації
-                                    </div>
-                                    <div>
-                                        Ютуб, Документація, Stack Overflow
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
                                         Мова програмування
                                     </div>
                                     <div>
@@ -283,62 +251,6 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Віддаю перевагу функціональним компонентам
-                                    </div>
-                                    <div>
-                                        Так
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Готовий адаптуватись до різних технологій
-                                    </div>
-                                    <div>
-                                        Так
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Можу спокійно жити, знаючи, що проблема не вирішена
-                                    </div>
-                                    <div>
-                                        Ні
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Роль JavaScript в житті
-                                    </div>
-                                    <div>
-                                        Першочергова
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Залежність від кодінга
-                                    </div>
-                                    <div>
-                                        Так
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Отримую завдоволення від робочого процесу
-                                    </div>
-                                    <div>
-                                        Так
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Можу працювати без вихідних
-                                    </div>
-                                    <div>
-                                        Так
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
                                         Одружений
                                     </div>
                                     <div>
@@ -351,22 +263,6 @@ export default function Home() {
                                     </div>
                                     <div>
                                         Ні
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Бачу життя без кодінга
-                                    </div>
-                                    <div>
-                                        Ні
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Готовий розвиватись та приносити користь компанії
-                                    </div>
-                                    <div>
-                                        Так
                                     </div>
                                 </div>
                             </div>
