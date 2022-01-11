@@ -182,8 +182,17 @@ export default function Home() {
                     {/*=====Про мене текст======*/}
                     <div className={'col-span-4 md:col-span-3 mr-5'}>
 
-                        <div className={'mr-auto ml-auto text-left text-sm md:text-lg border-b-2 border-red-700 font-serif mb-5 pb-5'}>
+                        <div
+                            className={'mr-auto ml-auto text-left text-sm md:text-lg border-b-2 border-red-700 font-serif mb-5 pb-5'}>
                             <div className={'max-w-2xl mr-auto ml-auto'}>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Вік
+                                    </div>
+                                    <div>
+                                        29
+                                    </div>
+                                </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
                                         Освіта
@@ -249,7 +258,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
-                                    <div >
+                                    <div>
                                         Фронтенд/Бекенд
                                     </div>
                                     <div>
@@ -314,7 +323,7 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                       Отримую завдоволення від робочого процесу
+                                        Отримую завдоволення від робочого процесу
                                     </div>
                                     <div>
                                         Так
@@ -322,7 +331,7 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                       Можу працювати без вихідних
+                                        Можу працювати без вихідних
                                     </div>
                                     <div>
                                         Так
