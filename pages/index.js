@@ -116,6 +116,9 @@ export default function Home() {
                                 093 214 33 60
                             </div>
                             <div className={'font-poppins m-2 text-red-800'}>
+                                <span className={'text-gray-500'}>Skype:</span> live:.cid.35038bc4e716cd2c
+                            </div>
+                            <div className={'font-poppins m-2 text-red-800'}>
                                 artemilchenko999@gmail.com
                             </div>
                         </div>
@@ -183,7 +186,7 @@ export default function Home() {
                     <div className={'col-span-4 md:col-span-3 mr-5'}>
 
                         <div
-                            className={'mr-auto ml-auto text-left text-sm md:text-lg border-b-2 border-red-700 font-serif mb-5 pb-5'}>
+                            className={'mr-auto ml-auto text-left text-sm md:text-lg border-b-2 border-red-700 font-serif mb-5 pb-20'}>
                             <div className={'max-w-2xl mr-auto ml-auto'}>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
@@ -341,7 +344,7 @@ export default function Home() {
                     {/*=====Улюблений мікс======*/}
 
                     <div className={'col-span-4 md:col-span-1 py-5'}>
-                        <div className={'text-center text-[30px] font-poppins font-thin'}>
+                        <div className={'text-center text-lg font-poppins font-thin'}>
                             Улюблений мікс
                         </div>
                         <Image
@@ -368,30 +371,7 @@ export default function Home() {
                             alt={'Logo'}
                             src={firebase}
                         />
-
-                        <div className={'text-center text-[30px] font-poppins font-thin'}>
-                            Де особливо хочу виділити
-                        </div>
-                        <Image
-                            className={'rounded rounded-lg'}
-                            objectFit={'cover'}
-                            width={800} height={250}
-                            alt={'Logo'}
-                            src={tailwind}
-                        />
-
-
-                        <Image
-                            className={'rounded rounded-lg'}
-                            objectFit={'cover'}
-                            width={800} height={250}
-                            alt={'Logo'}
-                            src={recoil}
-                        />
-                        <div className={'text-center text-[30px] font-poppins font-thin text-red-700'}>
-                            З чим працюю
-                        </div>
-                        <div className={'text-center text-[30px] font-poppins font-thin'}>
+                        <div className={'text-center text-lg font-poppins font-thin'}>
                             Мова програмування
                         </div>
                         <Image
@@ -400,7 +380,7 @@ export default function Home() {
                             alt={'Logo'}
                             src={jsts}
                         />
-                        <div className={'text-center text-[30px] font-poppins font-thin'}>
+                        <div className={'text-center text-lg font-poppins font-thin'}>
                             Корневі бібліотеки
                         </div>
                         <Image
@@ -409,11 +389,6 @@ export default function Home() {
                             alt={'Logo'}
                             src={nodereact}
                         />
-                        <div className={'text-center text-[30px] font-poppins font-thin'}>
-                            Та всі фреймворки які над ними
-                        </div>
-
-
                     </div>
 
 
