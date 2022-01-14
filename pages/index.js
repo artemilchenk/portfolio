@@ -406,10 +406,10 @@ export default function Home() {
 
                     <div className={'col-span-4 grid grid-cols-4 mt-20 lg:space-x-5 px-5'}>
 
-                        <ProjectComponent id={'MetaStore'} projectName={'MetaStore'}
+                        <ProjectComponent id={'Tkainekt'} projectName={'Tkainekt'}
                                           tek={'Next.js, Firebase, Tailwindcss'}
                                           description={'Магазин металевих конструкцій'} img={metastore}
-                                          projectDomain={'metastoree.online'} admin={'metastoree.online/admin'}
+                                          projectDomain={'tkainekt.com'}
                                           youtubeDomain={''}
                                           setProjectName={setProjectName}/>
                         <ProjectComponent id={'Soroka'} projectName={'Soroka'} description={'Месенджер'} img={soroka}
