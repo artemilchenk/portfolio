@@ -11,7 +11,8 @@ export const ProjectComponent = ({
                                      admin,
                                      tek,
                                      img,
-                                     id
+                                     id,
+                                     game
                                  }) => {
     return (
         <div id={id} onMouseOver={(e) => setProjectName(e.currentTarget.id)}
@@ -45,6 +46,14 @@ export const ProjectComponent = ({
                 <div className={'text-sm'}>
                     {tek}
                 </div>
+                {game && <div>
+                    <div className={'text-sm text-gray-500'}>
+                        Вимоги:
+                    </div>
+                    <div className={'text-sm'}>
+                        {game}
+                    </div>
+                </div>}
 
                 <div className={'h-full flex items-end'}>
                     <div>

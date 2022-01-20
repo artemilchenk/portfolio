@@ -18,6 +18,7 @@ import rumor from "../rumor.png";
 import musicspace from "../musicspace.png";
 import metastore from "../metastore.png";
 import soroka from "../soroka.png";
+import snake from "../snake.png";
 import {ProjectComponent} from "../components/projectComponent";
 
 export default function Home() {
@@ -404,7 +405,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className={'col-span-4 grid grid-cols-4 mt-20 lg:space-x-5 px-5'}>
+                    <div className={'col-span-4 grid grid-cols-4 lg:grid-cols-5 mt-20 lg:space-x-2 p-2'}>
 
                         <ProjectComponent id={'Tkainekt'} projectName={'Tkainekt'}
                                           tek={'Next.js, Firebase, Tailwindcss'}
@@ -425,6 +426,11 @@ export default function Home() {
                                           tek={'Next.js, NestJS, MongoDB'}
                                           img={musicspace}
                                           projectDomain={'musicspace.store'} youtubeDomain={''}
+                                          setProjectName={setProjectName}/>
+                        <ProjectComponent id={'Snake'} projectName={'Snake'} description={'Гра Змійка'}
+                                          tek={'React, Firebase'}
+                                          img={snake} game={'Монітор, Клавіатура'}
+                                          projectDomain={'snaaake.xyz'} youtubeDomain={''}
                                           setProjectName={setProjectName}/>
                     </div>
 
