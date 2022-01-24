@@ -19,6 +19,7 @@ import musicspace from "../musicspace.png";
 import metastore from "../metastore.png";
 import soroka from "../soroka.png";
 import snake from "../snake.png";
+import nicecomponents from "../nicecomponents.png";
 import {ProjectComponent} from "../components/projectComponent";
 
 export default function Home() {
@@ -405,7 +406,19 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className={'col-span-4 grid grid-cols-4 lg:grid-cols-5 mt-20 lg:space-x-2 p-2'}>
+                    <div className={'col-span-4 grid grid-cols-4 lg:grid-cols-4 mt-20 lg:space-x-2 p-2'}>
+
+                        <ProjectComponent id={'NiceComponents'} projectName={'NiceComponents'} description={'Милі Компоненти'}
+                                          tek={'React, Асинхронність'}
+                                          img={nicecomponents} game={'Монітор (шоб повноцінно відчути функціонал компонента)'}
+                                          projectDomain={'nicecomponents.xyz'} youtubeDomain={''}
+                                          setProjectName={setProjectName}/>
+
+                        <ProjectComponent id={'Snake'} projectName={'Snake'} description={'Гра Змійка'}
+                                          tek={'React, Firebase'}
+                                          img={snake} game={'Монітор, Клавіатура'}
+                                          projectDomain={'snaaake.xyz'} youtubeDomain={''}
+                                          setProjectName={setProjectName}/>
 
                         <ProjectComponent id={'Tkainekt'} projectName={'Tkainekt'}
                                           tek={'Next.js, Firebase, Tailwindcss'}
@@ -413,25 +426,24 @@ export default function Home() {
                                           projectDomain={'tkainekt.com'}
                                           youtubeDomain={''}
                                           setProjectName={setProjectName}/>
-                        <ProjectComponent id={'Soroka'} projectName={'Soroka'} description={'Месенджер'} img={soroka}
-                                          tek={'NextJS, Firebase, StyledComponents'}
-                                          projectDomain={'sorokaa.xyz'}
-                                          youtubeDomain={''} setProjectName={setProjectName}/>
+
                         <ProjectComponent id={'Rumor'} projectName={'Rumor'} description={'Соціальна мережа'}
                                           tek={'React, ApolloGraphql, MongoDB'}
                                           img={rumor}
                                           projectDomain={'rumorr.live'} youtubeDomain={''}
                                           setProjectName={setProjectName}/>
+
+                        <ProjectComponent id={'Soroka'} projectName={'Soroka'} description={'Месенджер'} img={soroka}
+                                          tek={'NextJS, Firebase, StyledComponents'}
+                                          projectDomain={'sorokaa.xyz'}
+                                          youtubeDomain={''} setProjectName={setProjectName}/>
+
                         <ProjectComponent id={'MusicSpace'} projectName={'MusicSpace'} description={'Музична площадка'}
                                           tek={'Next.js, NestJS, MongoDB'}
                                           img={musicspace}
                                           projectDomain={'musicspace.store'} youtubeDomain={''}
                                           setProjectName={setProjectName}/>
-                        <ProjectComponent id={'Snake'} projectName={'Snake'} description={'Гра Змійка'}
-                                          tek={'React, Firebase'}
-                                          img={snake} game={'Монітор, Клавіатура'}
-                                          projectDomain={'snaaake.xyz'} youtubeDomain={''}
-                                          setProjectName={setProjectName}/>
+
                     </div>
 
                 </div>

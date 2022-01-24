@@ -16,7 +16,7 @@ export const ProjectComponent = ({
                                  }) => {
     return (
         <div id={id} onMouseOver={(e) => setProjectName(e.currentTarget.id)}
-             className={'mb-10 lg:mb-0 col-span-4 flex justify-center text-black items-center md:col-span-2 lg:col-span-1 text-white'}>
+             className={'mb-10 mt-5 lg:mb-0 col-span-4 flex justify-center text-black items-center md:col-span-2 lg:col-span-1 text-white'}>
             <div
                 className={'flex flex-col justify-center items-center max-w-[250px] h-[500px] text-center bg-white shadow-2xl p-5 rounded rounded-md '}>
                 <div>
