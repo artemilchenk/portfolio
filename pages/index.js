@@ -121,6 +121,9 @@ export default function Home() {
                                 <span className={'text-gray-500'}>Skype:</span> live:.cid.35038bc4e716cd2c
                             </div>
                             <div className={'font-poppins m-2 text-red-800'}>
+                                <span className={'text-gray-500'}>Github:</span> https://github.com/artemilchenk
+                            </div>
+                            <div className={'font-poppins m-2 text-red-800'}>
                                 artemilchenko999@gmail.com
                             </div>
                         </div>
