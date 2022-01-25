@@ -265,7 +265,7 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Доcвід комерційної розробки в кмпаніях
+                                        Доcвід комерційної розробки
                                     </div>
                                     <div>
                                         Ні
