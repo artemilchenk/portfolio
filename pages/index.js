@@ -96,8 +96,6 @@ export default function Home() {
                                 <ButtonComponent text={'Контакти'} id={"#contacts"}/>
                             </div>
                         </div>
-
-
                     </div>
 
 
@@ -255,6 +253,22 @@ export default function Home() {
                                     </div>
                                     <div>
                                         React
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Доcвід розробки
+                                    </div>
+                                    <div>
+                                        1 рік
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Доcвід комерційної розробки в кмпаніях
+                                    </div>
+                                    <div>
+                                        Ні
                                     </div>
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
