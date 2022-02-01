@@ -41,14 +41,14 @@ export const ProjectComponent = ({
                     </div>
                 </div>
                 <div className={'text-sm text-gray-500'}>
-                    Технології:
+                    Technologies:
                 </div>
                 <div className={'text-sm'}>
                     {tek}
                 </div>
                 {game && <div>
                     <div className={'text-sm text-gray-500'}>
-                        Вимоги:
+                        Requirements:
                     </div>
                     <div className={'text-sm'}>
                         {game}

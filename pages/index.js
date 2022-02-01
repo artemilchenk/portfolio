@@ -87,13 +87,13 @@ export default function Home() {
                         <div
                             className={'hidden md:flex mt-5 col-span-4 justify-center md:justify-end md:col-span-3 md:mt-0'}>
                             <div className={'mx-5'}>
-                                <ButtonComponent text={'Про мене'} id={'#aboutMe'}/>
+                                <ButtonComponent text={'About me'} id={'#aboutMe'}/>
                             </div>
                             <div className={'mx-5'} onClick={() => setSideBar(false)}>
-                                <ButtonComponent text={'Проекти'} id={'#projects'}/>
+                                <ButtonComponent text={'Projects'} id={'#projects'}/>
                             </div>
                             <div className={'mx-5'} onClick={() => setSideBar(false)}>
-                                <ButtonComponent text={'Контакти'} id={"#contacts"}/>
+                                <ButtonComponent text={'Contacts'} id={"#contacts"}/>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ export default function Home() {
                             <div className={'font-poppins m-2'}>
                                 Full Stack Developer
                             </div>
-                            <ButtonComponent text={'Про мене'} id={'#aboutMe'}/>
+                            <ButtonComponent text={'About me'} id={'#aboutMe'}/>
                             <div className={'font-poppins m-2 text-red-800'}>
                                 093 214 33 60
                             </div>
@@ -183,7 +183,7 @@ export default function Home() {
                 <div id='aboutMe'
                      className={'col-span-4 bg-[#E5EAFF] grid grid-cols-4 border-b-2 border-[#1c1d25] py-10 px-5 '}>
                     <div className={'col-span-4 text-[40px] text-center font-poppins font-bold p-10'}>
-                        Про мене
+                        About me
                     </div>
                     {/*=====Про мене текст======*/}
                     <div className={'col-span-4 md:col-span-3 mr-5'}>
@@ -193,7 +193,7 @@ export default function Home() {
                             <div className={'max-w-2xl mr-auto ml-auto'}>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Вік
+                                        Age
                                     </div>
                                     <div>
                                         29
@@ -201,23 +201,23 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Освіта
+                                        Education
                                     </div>
                                     <div>
-                                        Вища (ЧДІЕУ)
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Спеціальність
-                                    </div>
-                                    <div>
-                                        Економічна Кібернетика
+                                        University Education
                                     </div>
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Мова програмування
+                                        Branch
+                                    </div>
+                                    <div>
+                                        Economic Cybernetics
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Programming language
                                     </div>
                                     <div>
                                         JavaScript/TypeScript
@@ -225,7 +225,7 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Позиція
+                                        Position
                                     </div>
                                     <div>
                                         Full Stack Developer
@@ -233,15 +233,15 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Фронтенд/Бекенд
+                                        Frontend / Backend
                                     </div>
                                     <div>
-                                        70%/30% відповідно
+                                        70%/30% accordingly
                                     </div>
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Бекенд(корінь)
+                                        Backend (root)
                                     </div>
                                     <div>
                                         Node
@@ -249,7 +249,7 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Фронтенд(корінь)
+                                        Frontend (root)
                                     </div>
                                     <div>
                                         React
@@ -257,48 +257,48 @@ export default function Home() {
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Доcвід розробки
+                                        Development experience
                                     </div>
                                     <div>
-                                        1 рік
-                                    </div>
-                                </div>
-                                <div className={'flex justify-between border-b border-black'}>
-                                    <div>
-                                        Доcвід комерційної розробки
-                                    </div>
-                                    <div>
-                                        Ні
+                                        1 year
                                     </div>
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Одружений
+                                        Commercial development experience
                                     </div>
                                     <div>
-                                        Ні
+                                        No
                                     </div>
                                 </div>
                                 <div className={'flex justify-between border-b border-black'}>
                                     <div>
-                                        Діти
+                                        Married
                                     </div>
                                     <div>
-                                        Ні
+                                        No
+                                    </div>
+                                </div>
+                                <div className={'flex justify-between border-b border-black'}>
+                                    <div>
+                                        Children
+                                    </div>
+                                    <div>
+                                        No
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div className={'text-center text-xl p-5'}>
-                            Технології з якими працював
+                            Technologies I worked with
                         </div>
 
                         <div className={'grid grid-cols-3 items-start justify-between'}>
 
                             <div className={'col-span-3 md:col-span-1 text-center'}>
                                 <div className={'font-thin text-red-700 '}>
-                                    Фронтенд
+                                    Frontend
                                 </div>
                                 <div>
                                     Rect
@@ -322,7 +322,7 @@ export default function Home() {
 
                             <div className={'col-span-3 md:col-span-1 text-center'}>
                                 <div className={'font-thin text-red-700'}>
-                                    Бекенд
+                                    Backend
                                 </div>
                                 <div>
                                     Node
@@ -344,7 +344,7 @@ export default function Home() {
 
                             <div className={'col-span-3 md:col-span-1 text-center'}>
                                 <div className={'font-thin text-red-700 '}>
-                                    Бази даних
+                                    Databases
                                 </div>
                                 <div>
                                     MongoDB
@@ -364,7 +364,7 @@ export default function Home() {
 
                     <div className={'col-span-4 md:col-span-1 py-5'}>
                         <div className={'text-center text-lg font-poppins font-thin'}>
-                            Улюблений мікс
+                            Favorite mix
                         </div>
                         <Image
                             className={'rounded rounded-lg'}
@@ -425,37 +425,37 @@ export default function Home() {
 
                     <div className={'col-span-4 grid grid-cols-4 lg:grid-cols-4 mt-20 lg:space-x-2 p-2'}>
 
-                        <ProjectComponent id={'NiceComponents'} projectName={'NiceComponents'} description={'Милі Компоненти'}
-                                          tek={'React, Асинхронність'}
-                                          img={nicecomponents} game={'Монітор (шоб повноцінно відчути функціонал компонента)'}
+                        <ProjectComponent id={'NiceComponents'} projectName={'NiceComponents'} description={'Nice Components'}
+                                          tek={'React, Async'}
+                                          img={nicecomponents} game={'Monitor (to fully experience the functionality of the component)'}
                                           projectDomain={'nicecomponents.xyz'} youtubeDomain={''}
                                           setProjectName={setProjectName}/>
 
-                        <ProjectComponent id={'Snake'} projectName={'Snake'} description={'Гра Змійка'}
+                        <ProjectComponent id={'Snake'} projectName={'Snake'} description={'Snake'}
                                           tek={'React, Firebase'}
-                                          img={snake} game={'Монітор, Клавіатура'}
+                                          img={snake} game={'Monitor, Keyboard'}
                                           projectDomain={'snaaake.xyz'} youtubeDomain={''}
                                           setProjectName={setProjectName}/>
 
                         <ProjectComponent id={'Tkainekt'} projectName={'Tkainekt'}
                                           tek={'Next.js, Firebase, Tailwindcss'}
-                                          description={'Магазин металевих конструкцій'} img={metastore}
+                                          description={'Metal constructions store'} img={metastore}
                                           projectDomain={'tkainekt.com'}
                                           youtubeDomain={''}
                                           setProjectName={setProjectName}/>
 
-                        <ProjectComponent id={'Rumor'} projectName={'Rumor'} description={'Соціальна мережа'}
+                        <ProjectComponent id={'Rumor'} projectName={'Rumor'} description={'Social network'}
                                           tek={'React, ApolloGraphql, MongoDB'}
                                           img={rumor}
                                           projectDomain={'rumorr.live'} youtubeDomain={''}
                                           setProjectName={setProjectName}/>
 
-                        <ProjectComponent id={'Soroka'} projectName={'Soroka'} description={'Месенджер'} img={soroka}
+                        <ProjectComponent id={'Soroka'} projectName={'Soroka'} description={'Messenger'} img={soroka}
                                           tek={'NextJS, Firebase, StyledComponents'}
                                           projectDomain={'sorokaa.xyz'}
                                           youtubeDomain={''} setProjectName={setProjectName}/>
 
-                        <ProjectComponent id={'MusicSpace'} projectName={'MusicSpace'} description={'Музична площадка'}
+                        <ProjectComponent id={'MusicSpace'} projectName={'MusicSpace'} description={'Music platform'}
                                           tek={'Next.js, NestJS, MongoDB'}
                                           img={musicspace}
                                           projectDomain={'musicspace.store'} youtubeDomain={''}
