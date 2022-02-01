@@ -417,7 +417,7 @@ export default function Home() {
                 <div id={'projects'} className={'col-span-4 grid grid-cols-4 text-center bg-[#E5EAFF] pb-10 md:pb-20'}>
                     <div
                         className={'col-span-4 text-[40px] bg-[#1c1d25] text-white text-center font-poppins font-bold p-10 h-[200px]'}>
-                        Мої проекти
+                        My Projects
                         <div className={'font-thin'}>
                             {projectName}
                         </div>
