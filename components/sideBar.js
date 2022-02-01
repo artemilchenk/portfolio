@@ -53,21 +53,21 @@ export const SideBar = ({sideBar, setSideBar, setSideBarPre, sideBarPre}) => {
                     {sideBar ?
                         <button onClick={() => setSideBar(sideBar => !sideBar)}
                                 className={'flex md:hidden'}><ButtonComponent text={'Закрити'}/></button>
-                        : <button className={'flex md:hidden'}><ButtonComponent text={'Закриваюсь...'}/></button>
+                        : <button className={'flex md:hidden'}><ButtonComponent text={'Closing...'}/></button>
                     }
                 </div>
                 <div>
 
                     <ButtonComponent styles={'p-5'} setSideBar={setSideBar} timeout={400} side={true} sideBar={sideBar}
-                                     text={'Про мене'} id={'#aboutMe'}/>
+                                     text={'About me'} id={'#aboutMe'}/>
 
 
                     <ButtonComponent styles={'p-5'} setSideBar={setSideBar} timeout={800} side={true} sideBar={sideBar}
-                                     text={'Проекти'} id={'#projects'}/>
+                                     text={'Projects'} id={'#projects'}/>
 
 
                     <ButtonComponent styles={'p-5'} setSideBar={setSideBar} timeout={1200} side={true} sideBar={sideBar}
-                                     text={'Контакти'} id={"#contacts"}/>
+                                     text={'Contacts'} id={"#contacts"}/>
 
                 </div>
             </div>
