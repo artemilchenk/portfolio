@@ -11,7 +11,7 @@ import js from "../js.png";
 import jsts from "../jsts.png";
 import nodereact from "../nodereact.png";
 import {SideBar} from "../components/sideBar";
-import {useEffect,useState} from "react";
+import {useEffect, useState} from "react";
 import img1Ref from "../metastore.png"
 import img2Ref from "../rumor.png"
 import img3Ref from "../snake.png"
@@ -31,6 +31,10 @@ export default function Home() {
     const [inW, setInw] = useState(null)
     const [photo, setPhoto] = useState(img1Ref)
     const widthBlock = !md ? 200 : 384
+
+    useEffect(()=>{
+        console.log(direction)
+    },[direction])
 
     useEffect(() => {
         if (direction === 'up') {
@@ -52,19 +56,21 @@ export default function Home() {
 
 
     function setArrow() {
-        if (direction === 'up') return 0
-        if (direction === 'middle') return 45
-        if (direction === 'down') return 90
+        if (direction === 'up') return '0'
+        if (direction === 'middle') return '45'
+        if (direction === 'down') return '90'
     }
 
     useEffect(() => {
         if (width <= widthBlock && !stop) {
             if (width < widthBlock / 2 && barPointState === 1) {
+                console.log(1)
                 setTimer(setTimeout(() => {
                     setBarPointState(2)
                 }, 1000))
             }
             if (width > widthBlock / 2 && width < widthBlock && barPointState === 2) {
+                console.log(2)
                 setStop(true)
                 setDirection('middle')
                 setTimer(setTimeout(() => {
@@ -74,6 +80,7 @@ export default function Home() {
 
             }
             if (width >= widthBlock && barPointState === 3) {
+                console.log(3)
                 setStop(true)
                 setDirection('down')
                 setTimer(setTimeout(() => {
