@@ -11,7 +11,7 @@ import js from "../js.png";
 import jsts from "../jsts.png";
 import nodereact from "../nodereact.png";
 import {SideBar} from "../components/sideBar";
-import {useEffect, useRef, useState} from "react";
+import {useEffect,useState} from "react";
 import img1Ref from "../metastore.png"
 import img2Ref from "../rumor.png"
 import img3Ref from "../snake.png"
@@ -28,9 +28,9 @@ export default function Home() {
     const [barPointState, setBarPointState] = useState(1)
     const [stop, setStop] = useState(false)
     const [md, setMd] = useState(false)
-    const widthBlock = !md ? 200 : 384
-    const [inW, setInw] = useState()
+    const [inW, setInw] = useState(null)
     const [photo, setPhoto] = useState(img1Ref)
+    const widthBlock = !md ? 200 : 384
 
     useEffect(() => {
         if (direction === 'up') {
@@ -99,14 +99,14 @@ export default function Home() {
         setSpark(!spark)
     }, 1000)
 
-    useEffect(()=>{
-        if(window.innerWidth >= 767){
+    useEffect(() => {
+        if (window.innerWidth >= 767) {
             setMd(true)
         }
-        if(window.innerWidth < 767){
+        if (window.innerWidth < 767) {
             setMd(false)
         }
-    },[inW])
+    }, [inW])
 
     const setInnerWidth = () => {
         setInw(window?.innerWidth)
@@ -207,7 +207,7 @@ export default function Home() {
                                 <span className={'text-gray-500'}>Github:</span> https://github.com/artemilchenk
                             </div>
                             <div className={'font-poppins m-2 text-red-800'}>
-                                <span className={'text-gray-500'}>Mail:</span>  artemilchenko999@gmail.com
+                                <span className={'text-gray-500'}>Mail:</span> artemilchenko999@gmail.com
                             </div>
                         </div>
                         {/*=======Image======*/}
@@ -580,7 +580,6 @@ export default function Home() {
                                 <Image objectFit={'cover'} width={100} height={100} className={'rounded-full'}
                                        id={'first'} src={img1Ref}
                                        alt=""/>
-
                             </div>
 
                             <div
