@@ -28,7 +28,6 @@ export default function Home() {
     const [sideBarPre, setSideBarPre] = useState(false)
     const [spark, setSpark] = useState(false)
     const [projectName, setProjectName] = useState('')
-    const [imagesIsReady, setImagesIsReady] = useState(false)
     const [timer, setTimer] = useState(true)
     const [timerClick, setTimerClick] = useState(0)
     const [direction, setDirection] = useState('up')
@@ -39,9 +38,6 @@ export default function Home() {
     const widthBlock = !md ? 200 : 384
     const [inW, setInw] = useState()
     const [photo, setPhoto] = useState(img1Ref)
-    useEffect(()=>{
-        console.log(inW)
-    },[inW])
 
     useEffect(() => {
         if (direction === 'up') {
@@ -99,8 +95,8 @@ export default function Home() {
             }
             if (timer) {
                 setTimeout(() => {
-                    setWidth(width + 1)
-                }, 50)
+                    setWidth(width + 2)
+                }, 100)
             }
 
         }
