@@ -8,12 +8,10 @@ import react from "../react.png";
 import next from "../next.png";
 import firebase from "../firebase.png";
 import js from "../js.png";
-import tailwind from "../tailwind.png";
-import recoil from "../recoil.png";
 import jsts from "../jsts.png";
 import nodereact from "../nodereact.png";
 import {SideBar} from "../components/sideBar";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import rumor from "../rumor.png";
 import musicspace from "../musicspace.png";
 import metastore from "../metastore.png";
@@ -21,16 +19,114 @@ import soroka from "../soroka.png";
 import snake from "../snake.png";
 import nicecomponents from "../nicecomponents.png";
 import {ProjectComponent} from "../components/projectComponent";
+import img1Ref from "../metastore.png"
+import img2Ref from "../rumor.png"
+import img3Ref from "../snake.png"
 
 export default function Home() {
     const [sideBar, setSideBar] = useState(false)
     const [sideBarPre, setSideBarPre] = useState(false)
     const [spark, setSpark] = useState(false)
     const [projectName, setProjectName] = useState('')
+    const [imagesIsReady, setImagesIsReady] = useState(false)
+    const [timer, setTimer] = useState(true)
+    const [timerClick, setTimerClick] = useState(0)
+    const [direction, setDirection] = useState('up')
+    const [width, setWidth] = useState(0)
+    const [barPointState, setBarPointState] = useState(1)
+    const [stop, setStop] = useState(false)
+    const [md, setMd] = useState(false)
+    const widthBlock = !md ? 200 : 384
+    const [inW, setInw] = useState()
+    const [photo, setPhoto] = useState(img1Ref)
+    useEffect(()=>{
+        console.log(inW)
+    },[inW])
+
+    useEffect(() => {
+        if (direction === 'up') {
+            setTimeout(() => {
+                setPhoto(img1Ref)
+            }, 1000)
+        }
+        if (direction === 'middle') {
+            setTimeout(() => {
+                setPhoto(img2Ref)
+            }, 1000)
+        }
+        if (direction === 'down') {
+            setTimeout(() => {
+                setPhoto(img3Ref)
+            }, 1000)
+        }
+    }, [direction])
+
+
+    function setArrow() {
+        if (direction === 'up') return 0
+        if (direction === 'middle') return 45
+        if (direction === 'down') return 90
+    }
+
+    useEffect(() => {
+        if (width <= widthBlock && !stop) {
+            if (width < widthBlock / 2 && barPointState === 1) {
+                setTimer(setTimeout(() => {
+                    setBarPointState(2)
+                }, 1000))
+            }
+            if (width > widthBlock / 2 && width < widthBlock && barPointState === 2) {
+                setStop(true)
+                setDirection('middle')
+                setTimer(setTimeout(() => {
+                    setStop(false)
+                    setBarPointState(3)
+                }, 1000))
+
+            }
+            if (width >= widthBlock && barPointState === 3) {
+                setStop(true)
+                setDirection('down')
+                setTimer(setTimeout(() => {
+                    setTimeout(() => {
+                        setDirection('up')
+                        setStop(false)
+                        setBarPointState(1)
+                        setWidth(0)
+                    }, 2000)
+
+                }, 1000))
+            }
+            if (timer) {
+                setTimeout(() => {
+                    setWidth(width + 1)
+                }, 50)
+            }
+
+        }
+    }, [width, stop])
 
     const setLogoSpark = setTimeout(() => {
         setSpark(!spark)
     }, 1000)
+
+    useEffect(()=>{
+        if(window.innerWidth >= 767){
+            setMd(true)
+        }
+        if(window.innerWidth < 767){
+            setMd(false)
+        }
+    },[inW])
+
+    const setInnerWidth = () => {
+        setInw(window?.innerWidth)
+    }
+    useEffect(() => {
+        setInw(window.innerWidth)
+        window.addEventListener('resize', setInnerWidth)
+        return () => window.removeEventListener('resize', setInnerWidth)
+    }, [])
 
 
     return (
@@ -174,7 +270,6 @@ export default function Home() {
                                         </div>
                                     </a>
                                 </Link>
-
                             </div>
                         </div>
                     </div>
@@ -414,55 +509,146 @@ export default function Home() {
                 </div>
                 {/*==================================Section-3====================================*/}
 
-                <div id={'projects'} className={'col-span-4 grid grid-cols-4 text-center bg-[#E5EAFF] pb-10 md:pb-20'}>
+                <div id={'projects'} className={'col-span-4 flex flex-col text-center bg-[#E5EAFF] pb-10 md:pb-20'}>
                     <div
-                        className={'col-span-4 text-[40px] bg-[#1c1d25] text-white text-center font-poppins font-bold p-10 h-[200px]'}>
+                        className={'text-[40px] bg-[#1c1d25] text-white text-center font-poppins font-bold p-10 h-[200px]'}>
                         My Projects
                         <div className={'font-thin'}>
                             {projectName}
                         </div>
                     </div>
 
-                    <div className={'col-span-4 grid grid-cols-4 lg:grid-cols-4 mt-20 lg:space-x-2 p-2'}>
+                    {/* ========================================RoundComponent===========================*/}
 
-                        <ProjectComponent id={'NiceComponents'} projectName={'NiceComponents'} description={'Nice Components'}
-                                          tek={'React, Async'}
-                                          img={nicecomponents} game={'Monitor (to fully experience the functionality of the component)'}
-                                          projectDomain={'nicecomponents.xyz'} youtubeDomain={''}
-                                          setProjectName={setProjectName}/>
+                    <div className={'h-screen relative col-span-4 flex justify-center items-center bg-gray-300 px-5 '}>
+                        <div>
+                            <div className={'m-5 text-xl'}>
+                                {setArrow() === 0 && 'Tkainekt'}
+                                {setArrow() === 45 && 'Rumor'}
+                                {setArrow() === 90 && 'Snake'}
+                            </div>
+                            <div className={'flex flex-col justify-center items-center'}>
+                                <div className={'relative flex justify-end items-end w-48 h-48 md:w-96 md:h-96'}>
+                                    <div
+                                        className={`absolute z-10 w-48 h-48 md:w-96 md:h-96 flex justify-end rotate-${setArrow()} transform scale-90 transition-transform duration-1000`}>
+                                        <div className={'w-12 h-12 bg-red-900'}></div>
+                                    </div>
+                                    <div
+                                        className={`absolute z-20 rounded-full bg-gray-300 w-48 h-48 md:w-96 md:h-96 transform scale-110 transition-transform duration-1000 border border-red-900`}>
+                                    </div>
+                                    <div
+                                        className={'scroll-none absolute z-30 top-0 left-0 flex w-48 h-48 md:w-96 md:h-96 overflow-scroll rounded-full border border-red-900 bg-black'}>
+                                        <Link
+                                            href={`https://www.${setArrow() === 0 ? 'tkainekt.com' : setArrow() === 45 ? 'rumorr.live' : 'snaaake.xyz'}`}>
+                                            <a>
+                                                <div className={'cursor-pointer w-48 h-48 md:w-96 md:h-96 '}>
+                                                    <Image objectFit={'cover'} width={400} height={400} src={photo}
+                                                           alt=""/>
+                                                </div>
+                                            </a>
+                                        </Link>
 
-                        <ProjectComponent id={'Snake'} projectName={'Snake'} description={'Snake'}
-                                          tek={'React, Firebase'}
-                                          img={snake} game={'Monitor, Keyboard'}
-                                          projectDomain={'snaaake.xyz'} youtubeDomain={''}
-                                          setProjectName={setProjectName}/>
+                                    </div>
+                                </div>
+                                <div className={'relative w-full mt-10'}>
+                                    <div style={{width: width}} className={'h-5 rounded-full bg-red-900 flex'}>
+                                    </div>
+                                    <div style={{top: -5}} id={'33'}
+                                         className={'absolute w-full flex justify-between items-center'}>
+                                        <Image className={'rounded rounded-full'} width={30} height={30} id={'first'}
+                                               src={img1Ref} alt=""/>
+                                        <Image className={'rounded rounded-full'} width={30} height={30} id={'second'}
+                                               src={img2Ref} alt=""/>
+                                        <Image className={'rounded rounded-full'} width={30} height={30} id={'third'}
+                                               src={img3Ref} alt=""/>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <ProjectComponent id={'Tkainekt'} projectName={'Tkainekt'}
-                                          tek={'Next.js, Firebase, Tailwindcss'}
-                                          description={'Metal constructions store'} img={metastore}
-                                          projectDomain={'tkainekt.com'}
-                                          youtubeDomain={''}
-                                          setProjectName={setProjectName}/>
+                        </div>
 
-                        <ProjectComponent id={'Rumor'} projectName={'Rumor'} description={'Social network'}
-                                          tek={'React, ApolloGraphql, MongoDB'}
-                                          img={rumor}
-                                          projectDomain={'rumorr.live'} youtubeDomain={''}
-                                          setProjectName={setProjectName}/>
 
-                        <ProjectComponent id={'Soroka'} projectName={'Soroka'} description={'Messenger'} img={soroka}
-                                          tek={'NextJS, Firebase, StyledComponents'}
-                                          projectDomain={'sorokaa.xyz'}
-                                          youtubeDomain={''} setProjectName={setProjectName}/>
+                        <div className={'flex flex-col w-48 h-96 md:ml-16 justify-between items-center'}>
+                            <div
+                                className={'flex relative items-center justify-center w-24 h-24 rounded-full hover:opacity-80 transition-opacity duration-200  cursor-pointer'}
+                                onClick={async () => {
+                                    setTimer(0)
+                                    setTimerClick(0)
+                                    setTimerClick(
+                                        setTimeout(() => {
+                                            setTimer(true)
+                                            setWidth(1)
+                                            setBarPointState(1)
+                                            setDirection('up')
+                                            setTimeout(() => {
+                                            }, 500)
+                                        }, 200)
+                                    )
 
-                        <ProjectComponent id={'MusicSpace'} projectName={'MusicSpace'} description={'Music platform'}
-                                          tek={'Next.js, NestJS, MongoDB'}
-                                          img={musicspace}
-                                          projectDomain={'musicspace.store'} youtubeDomain={''}
-                                          setProjectName={setProjectName}/>
+                                }}>
+                                {direction === 'up' &&
+                                <div className={'absolute rounded-full w-32 h-32 border border-red-900'}></div>}
+                                <Image objectFit={'cover'} width={100} height={100} className={'rounded-full'}
+                                       id={'first'} src={img1Ref}
+                                       alt=""/>
 
+                            </div>
+
+                            <div
+                                className={'flex items-center justify-center w-24 h-24 rounded-full hover:opacity-80 transition-opacity duration-200 cursor-pointer '}
+                                onClick={async () => {
+                                    setTimer(0)
+                                    setTimerClick(0)
+                                    setTimerClick(
+                                        setTimeout(() => {
+                                            setTimer(true)
+                                            setWidth((widthBlock / 2) + 2)
+                                            setBarPointState(2)
+                                            setDirection('middle')
+                                            setTimeout(() => {
+                                            }, 500)
+                                        }, 200)
+                                    )
+
+                                }}>
+                                {direction === 'middle' &&
+                                <div className={'absolute rounded-full w-32 h-32 border border-red-900'}></div>}
+                                <Image objectFit={'cover'} width={100} height={100} className={'rounded-full'}
+                                       id={'second'} src={img2Ref}
+                                       alt=""/>
+                            </div>
+
+                            <div
+                                className={'flex items-center justify-center w-24 h-24 rounded-full hover:opacity-80 transition-opacity duration-200 cursor-pointer'}
+                                onClick={async () => {
+                                    setTimer(0)
+                                    setTimerClick(0)
+                                    setTimerClick(
+                                        setTimeout(() => {
+                                            setTimer(true)
+                                            setWidth(widthBlock + 2)
+                                            setBarPointState(3)
+                                            setDirection('down')
+                                            setTimeout(() => {
+                                                setTimeout(() => {
+                                                    setDirection('up')
+                                                    setStop(false)
+                                                    setBarPointState(1)
+                                                    setWidth(0)
+                                                }, 5000)
+                                            }, 500)
+                                        }, 200)
+                                    )
+                                }}>
+                                {direction === 'down' &&
+                                <div className={'absolute rounded-full w-32 h-32 border border-red-900'}></div>}
+                                <Image objectFit={'cover'} width={100} height={100} className={'rounded-full'}
+                                       id={'third'} src={img3Ref}
+                                       alt=""/>
+
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
             <footer className={'bg-[#1c1d25] p-5 text-white'}>
