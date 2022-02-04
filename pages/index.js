@@ -12,13 +12,6 @@ import jsts from "../jsts.png";
 import nodereact from "../nodereact.png";
 import {SideBar} from "../components/sideBar";
 import {useEffect, useRef, useState} from "react";
-import rumor from "../rumor.png";
-import musicspace from "../musicspace.png";
-import metastore from "../metastore.png";
-import soroka from "../soroka.png";
-import snake from "../snake.png";
-import nicecomponents from "../nicecomponents.png";
-import {ProjectComponent} from "../components/projectComponent";
 import img1Ref from "../metastore.png"
 import img2Ref from "../rumor.png"
 import img3Ref from "../snake.png"
@@ -204,7 +197,7 @@ export default function Home() {
                                 Full Stack Developer
                             </div>
                             <ButtonComponent text={'About me'} id={'#aboutMe'}/>
-                            <div className={'font-poppins m-2 text-red-800'}>
+                            <div className={'font-poppins m-2 mt-5 text-red-800'}>
                                 093 214 33 60
                             </div>
                             <div className={'font-poppins m-2 text-red-800'}>
@@ -214,7 +207,7 @@ export default function Home() {
                                 <span className={'text-gray-500'}>Github:</span> https://github.com/artemilchenk
                             </div>
                             <div className={'font-poppins m-2 text-red-800'}>
-                                artemilchenko999@gmail.com
+                                <span className={'text-gray-500'}>Mail:</span>  artemilchenko999@gmail.com
                             </div>
                         </div>
                         {/*=======Image======*/}
