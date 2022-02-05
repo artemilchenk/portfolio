@@ -519,14 +519,14 @@ export default function Home() {
                     <div className={'h-screen relative col-span-4 flex justify-center items-center bg-gray-300 px-5 '}>
                         <div>
                             <div className={'m-5 text-xl'}>
-                                {setArrow() === 0 && 'Tkainekt'}
-                                {setArrow() === 45 && 'Rumor'}
-                                {setArrow() === 90 && 'Snake'}
+                                {setArrow() === '0' && 'Tkainekt'}
+                                {setArrow() === '45' && 'Rumor'}
+                                {setArrow() === '90' && 'Snake'}
                             </div>
                             <div className={'flex flex-col justify-center items-center'}>
                                 <div className={'relative flex justify-end items-end w-48 h-48 md:w-96 md:h-96'}>
-                                    <div style={{transform: `rotate(${setArrow()}deg)`}}
-                                        className={`absolute z-10 w-48 h-48 md:w-96 md:h-96 flex justify-end transform scale-90 transition-transform duration-1000`}>
+                                    <div style={{transform: `rotate(${setArrow()}deg) scale(0.9)`}}
+                                        className={`absolute z-10 w-48 h-48 md:w-96 md:h-96 flex justify-end transform transition-transform duration-1000`}>
                                         <div className={'w-12 h-12 bg-red-900'}></div>
                                     </div>
                                     <div
@@ -535,7 +535,7 @@ export default function Home() {
                                     <div
                                         className={'scroll-none absolute z-30 top-0 left-0 flex w-48 h-48 md:w-96 md:h-96 overflow-scroll rounded-full border border-red-900 bg-black'}>
                                         <Link
-                                            href={`https://www.${setArrow() === 0 ? 'tkainekt.com' : setArrow() === 45 ? 'rumorr.live' : 'snaaake.xyz'}`}>
+                                            href={`https://www.${setArrow() === '0' ? 'tkainekt.com' : setArrow() === '45' ? 'rumorr.live' : 'snaaake.xyz'}`}>
                                             <a>
                                                 <div className={'cursor-pointer w-48 h-48 md:w-96 md:h-96 '}>
                                                     <Image objectFit={'cover'} width={400} height={400} src={photo}
