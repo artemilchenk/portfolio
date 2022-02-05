@@ -30,11 +30,7 @@ export default function Home() {
     const [md, setMd] = useState(false)
     const [inW, setInw] = useState(null)
     const [photo, setPhoto] = useState(img1Ref)
-    const widthBlock = !md ? 200 : 384
-
-    useEffect(()=>{
-        console.log(direction)
-    },[direction])
+    const widthBlock = !md ? 180 : 360
 
     useEffect(() => {
         if (direction === 'up') {
@@ -64,13 +60,11 @@ export default function Home() {
     useEffect(() => {
         if (width <= widthBlock && !stop) {
             if (width < widthBlock / 2 && barPointState === 1) {
-                console.log(1)
                 setTimer(setTimeout(() => {
                     setBarPointState(2)
                 }, 1000))
             }
             if (width > widthBlock / 2 && width < widthBlock && barPointState === 2) {
-                console.log(2)
                 setStop(true)
                 setDirection('middle')
                 setTimer(setTimeout(() => {
@@ -80,7 +74,6 @@ export default function Home() {
 
             }
             if (width >= widthBlock && barPointState === 3) {
-                console.log(3)
                 setStop(true)
                 setDirection('down')
                 setTimer(setTimeout(() => {
@@ -93,7 +86,7 @@ export default function Home() {
 
                 }, 1000))
             }
-            if (timer) {
+            if (timer && width <= widthBlock) {
                 setTimeout(() => {
                     setWidth(width + 2)
                 }, 100)
