@@ -21,9 +21,9 @@ export default function Home() {
 
 //----------------SPARK---------------------
     const [spark, setSpark] = useState(false)
-   /* const setLogoSpark = setTimeout(() => {
+    const setLogoSpark = setTimeout(() => {
         setSpark(!spark)
-    }, 1000)*/
+    }, 1000)
 //----------------SPARK---------------------
 
 
