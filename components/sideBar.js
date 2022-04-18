@@ -52,7 +52,7 @@ export const SideBar = ({sideBar, setSideBar, setSideBarPre, sideBarPre}) => {
                 <div className={'flex justify-center'}>
                     {sideBar ?
                         <button onClick={() => setSideBar(sideBar => !sideBar)}
-                                className={'flex md:hidden'}><ButtonComponent text={'Закрити'}/></button>
+                                className={'flex md:hidden'}><ButtonComponent text={'Close'}/></button>
                         : <button className={'flex md:hidden'}><ButtonComponent text={'Closing...'}/></button>
                     }
                 </div>
