@@ -3,58 +3,118 @@ import js from "../static/js.png";
 import react from "../static/react.png";
 import next from "../static/next.png";
 import firebase from "../static/firebase.png";
-import jsts from "../static/jsts.png";
-import nodereact from "../static/nodereact.png";
+import stack from "../static/full-stack-developer.jpeg";
+import mongo from "../static/mongodb.png";
+import tailwind from "../static/tailwind.png";
+import recoil from "../static/recoil.png";
+import redux from "../static/redux.png";
+import typescript from "../static/typescript-in-react.png";
 
-export const FavoriteMix =()=>{
+
+export const FavoriteMix = () => {
 
     return (
-        <div className={'col-span-4 md:col-span-1 py-5'}>
-            <div className={'text-center text-lg font-poppins font-thin'}>
-                Favorite mix
+
+        <div className={'flex flex-col col-span-4  justify-center items-center'}>
+            <div className={'flex flex-col col-span-4'}>
+
+                <div className={'font-poppins text-lg text-center'}>
+                    Stack
+                </div>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={400} height={165}
+                        alt={'Logo'}
+                        src={stack}
+                    />
+                </div>
             </div>
-            <Image
-                className={'rounded rounded-lg'}
-                width={800} height={250}
-                alt={'Logo'}
-                src={js}
-            />
-            <Image
-                className={'rounded rounded-lg'}
-                width={800} height={250}
-                alt={'Logo'}
-                src={react}
-            />
-            <Image
-                className={'rounded rounded-lg'}
-                width={800} height={250}
-                alt={'Logo'}
-                src={next}
-            />
-            <Image
-                className={'rounded rounded-lg'}
-                width={800} height={250}
-                alt={'Logo'}
-                src={firebase}
-            />
-            <div className={'text-center text-lg font-poppins font-thin'}>
-                Мова програмування
+            <div className={'flex flex-wrap justify-center items-center text-sm font-serif col-span-4 mr-5'}>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={200} height={65}
+                        alt={'Logo'}
+                        src={js}
+                    />
+                </div>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={200} height={65}
+                        alt={'Logo'}
+                        src={react}
+                    />
+                </div>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={200} height={65}
+                        alt={'Logo'}
+                        src={next}
+                    />
+                </div>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={200} height={65}
+                        alt={'Logo'}
+                        src={firebase}
+                    />
+                </div>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={200} height={65}
+                        alt={'Logo'}
+                        src={mongo}
+                    />
+                </div>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={200} height={65}
+                        alt={'Logo'}
+                        src={tailwind}
+                    />
+                </div>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={200} height={65}
+                        alt={'Logo'}
+                        src={recoil}
+                    />
+                </div>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={200} height={65}
+                        alt={'Logo'}
+                        src={redux}
+                    />
+                </div>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={200} height={65}
+                        alt={'Logo'}
+                        src={typescript}
+                    />
+                </div>
+
             </div>
-            <Image
-                className={'rounded rounded-lg'}
-                width={800} height={250}
-                alt={'Logo'}
-                src={jsts}
-            />
-            <div className={'text-center text-lg font-poppins font-thin'}>
-                Корневі бібліотеки
-            </div>
-            <Image
-                className={'rounded rounded-lg'}
-                width={800} height={320}
-                alt={'Logo'}
-                src={nodereact}
-            />
         </div>
     )
 }

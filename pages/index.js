@@ -105,10 +105,10 @@ export default function Home() {
                 <AboutMe/>
                 {/*==================================aboutMe====================================*/}
 
-                <div id={'projects'} className={'col-span-4 flex flex-col text-center bg-[#E5EAFF] pb-10 md:pb-20'}>
+                <div id={'projects'} className={'col-span-4 flex flex-col text-center'}>
                     <div
-                        className={'text-[40px] bg-[#1c1d25] text-white text-center font-poppins font-bold p-10 h-[200px]'}>
-                        My Projects
+                        className={'flex justify-center items-center text-[40px] bg-[#1c1d25] text-white text-center font-poppins font-bold h-[200px]'}>
+                        <div>My Projects</div>
                     </div>
 
                     {/* ========================================MyProjects===========================*/}
@@ -163,7 +163,6 @@ export default function Home() {
                                        id={'third'} src={img3Ref}
                                        alt=""/>
                             </div>
-
                         </div>
                     </div>
                     {/* ========================================MyProjects===========================*/}
