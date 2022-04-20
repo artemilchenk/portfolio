@@ -9,6 +9,7 @@ import tailwind from "../static/tailwind.png";
 import recoil from "../static/recoil.png";
 import redux from "../static/redux.png";
 import typescript from "../static/typescript-in-react.png";
+import node from "../static/node.jpeg";
 
 
 export const FavoriteMix = () => {
@@ -48,6 +49,15 @@ export const FavoriteMix = () => {
                         width={200} height={65}
                         alt={'Logo'}
                         src={react}
+                    />
+                </div>
+
+                <div className={'m-2'}>
+                    <Image
+                        className={'rounded rounded-lg'}
+                        width={200} height={65}
+                        alt={'Logo'}
+                        src={node}
                     />
                 </div>
 
