@@ -1,5 +1,4 @@
 import {AboutMeTab} from "./AboutMeTab";
-import {TechnologiesColumn} from "./TechnologiesColumn";
 import {FavoriteMix} from "./FavoriteMix";
 
 export const AboutMe = () => {

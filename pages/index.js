@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {SideBar} from "../components/sideBar";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import {Header} from "../components/Header";
 import {AboutMe} from "../components/AboutMe";
 import {Footer} from "../components/Footer";
@@ -33,14 +33,15 @@ export default function Home() {
                 <Header setSideBarPre={setSideBarPre} setSideBar={setSideBar}/>
                 {/*=====Header======*/}
 
-                {/*==================================aboutMe====================================*/}
+                {/*======aboutMe=====*/}
                 <AboutMe/>
-                {/*==================================aboutMe====================================*/}
+                {/*======aboutMe======*/}
 
-                {/* ========================================MyProjects===========================*/}
+                {/*======MyProjects=====*/}
                 <ProjectsComponent />
-                {/* ========================================MyProjects===========================*/}
+                {/*======MyProjects=====*/}
             </div>
+
             <Footer/>
         </div>
     )

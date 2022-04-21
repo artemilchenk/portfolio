@@ -65,7 +65,7 @@ export const Header = ({setSideBarPre, setSideBar}) => {
 
 
             {/*=========MyInfo========*/}
-            <MyInfo/>
+            <MyInfo spark={spark}/>
             {/*=========MyInfo========*/}
 
 

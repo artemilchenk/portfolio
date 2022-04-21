@@ -40,19 +40,7 @@ export const ProjectsComponent = () => {
             }, 1000)
         }
     }, [direction])
-//--------------CHANGE--IMG--FROM--DIRECTION--ERROR--------------
 
-//----------------WIDTH---------------------
- /*   const setInnerWidth = () => {
-        setWidth(window?.innerWidth)
-    }
-
-    useEffect(() => {
-        setWidth(window.innerWidth)
-        window.addEventListener('resize', setInnerWidth)
-        return () => window.removeEventListener('resize', setInnerWidth)
-    }, [])*/
-//----------------WIDTH---------------------
 
     return (
 
