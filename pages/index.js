@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from "next/image";
 import {SideBar} from "../components/sideBar";
 import {useEffect, useState} from "react";
-import img1Ref from "../static/metastore.png"
+import img1Ref from "../static/rss.png"
 import img2Ref from "../static/rumor.png"
 import img3Ref from "../static/snake.png"
 import {Header} from "../components/Header";
