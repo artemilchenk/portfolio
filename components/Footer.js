@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 export const Footer =()=>{
+
+    console.log('footer')
+
     return (
         <footer className={'bg-[#1c1d25] p-5 text-white'}>
             <div

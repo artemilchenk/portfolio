@@ -2,8 +2,17 @@ import Image from "next/image";
 import logo from "../static/logo.png";
 import {ButtonComponent} from "./buttonComponent";
 import {MyInfo} from "./MyInfo";
+import {useState} from "react";
 
-export const Header = ({spark, setSideBarPre, setSideBar})=>{
+export const Header = ({setSideBarPre, setSideBar}) => {
+
+//----------------SPARK---------------------
+    const [spark, setSpark] = useState(false)
+    const setLogoSpark = setTimeout(() => {
+        setSpark(!spark)
+    }, 1000)
+//----------------SPARK---------------------
+
     return (
         <div id={'contacts'} className={'col-span-4 bg-[#1c1d25] border-[1px] border-black pb-40'}>
 
