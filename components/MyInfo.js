@@ -21,7 +21,7 @@ export const MyInfo = ({spark}) => {
                 />
                 <div className={'bg-[#1c1d25] rounded-lg mt-10 p-5 flex justify-between'}>
 
-                    <div className={`translate-y-[${spark ? '-100px' : '0px'}] transition-all duration-1000`}>
+                    <div className={spark ? `-translate-y-24 transition-all duration-1000` : `-translate-y-0 transition-all duration-1000`}>
                         <Link href="https://www.facebook.com/profile.php?id=100004528778719">
                             <a>
                                 <div
@@ -36,7 +36,7 @@ export const MyInfo = ({spark}) => {
                         </Link>
                     </div>
 
-                    <div className={`translate-y-[${spark ? '100px' : '0px'}] transition-all duration-1000`}>
+                    <div className={spark ? `translate-y-24 transition-all duration-1000` : `-translate-y-0 transition-all duration-1000`}>
                         <Link href="https://www.instagram.com/artem__ilchenko/">
                             <a>
                                 <div
@@ -51,7 +51,7 @@ export const MyInfo = ({spark}) => {
                         </Link>
                     </div>
 
-                    <div className={`translate-y-[${spark ? '-100px' : '0px'}] transition-all duration-1000`}>
+                    <div className={spark ? `-translate-y-24 transition-all duration-1000` : `-translate-y-0 transition-all duration-1000`}>
                         <Link href="https://github.com/artemilchenk">
                             <a>
                                 <div
