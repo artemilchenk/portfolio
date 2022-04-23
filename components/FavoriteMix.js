@@ -1,27 +1,18 @@
 import Image from "next/image";
-import js from "../static/js.png";
-import react from "../static/react.png";
-import next from "../static/next.png";
-import firebase from "../static/firebase.png";
 import stack from "../static/full-stack-developer.jpeg";
-import mongo from "../static/mongodb.png";
-import redux from "../static/redux.png";
-import node from "../static/node.jpeg";
 import {useEffect, useState} from "react";
 
-
-
-export const FavoriteMix = () => {
+export const FavoriteMix = ({imgArr}) => {
     const [items, setItems] = useState([0])
     const [tar, setTar] = useState({})
     const [scrollTop, setScrollTop] = useState(0)
     const [timer, setTimer] = useState()
 
     useEffect(() => {
-        if (scrollTop > (tar?.offsetTop -300) && items.length < 9) {
+        if (scrollTop > (tar?.offsetTop -300) && items.length < 10) {
             setTimer(setTimeout(() => {
                 setItems([...items, (items[items.length - 1] + 1)])
-            }, 1000))
+            }, 500))
         }
     }, [scrollTop,items.length])
 
@@ -59,76 +50,17 @@ export const FavoriteMix = () => {
             </div>
 
             <div className={'flex flex-wrap justify-center items-center text-sm font-serif col-span-4 mr-5'}>
-                <div
-                    className={appear(1)}>
-                    <Image
-                        className={'rounded rounded-lg'}
-                        width={200} height={65}
-                        alt={'Logo'}
-                        src={js}
-                    />
-                </div>
-
-                <div
-                    className={appear(2)}>
-                    <Image
-                        className={'rounded rounded-lg'}
-                        width={200} height={65}
-                        alt={'Logo'}
-                        src={react}
-                    />
-                </div>
-
-                <div
-                    className={appear(3)}>
-                    <Image
-                        className={'rounded rounded-lg'}
-                        width={200} height={65}
-                        alt={'Logo'}
-                        src={node}
-                    />
-                </div>
-
-                <div
-                    className={appear(4)}>
-                    <Image
-                        className={'rounded rounded-lg'}
-                        width={200} height={65}
-                        alt={'Logo'}
-                        src={next}
-                    />
-                </div>
-
-                <div
-                    className={appear(5)}>
-                    <Image
-                        className={'rounded rounded-lg'}
-                        width={200} height={65}
-                        alt={'Logo'}
-                        src={firebase}
-                    />
-                </div>
-
-                <div
-                    className={appear(6)}>
-                    <Image
-                        className={'rounded rounded-lg'}
-                        width={200} height={65}
-                        alt={'Logo'}
-                        src={mongo}
-                    />
-                </div>
-
-                <div
-                    className={appear(7)}>
-                    <Image
-                        className={'rounded rounded-lg'}
-                        width={200} height={65}
-                        alt={'Logo'}
-                        src={redux}
-                    />
-                </div>
-
+                {imgArr.map((img, index) => (
+                    <div
+                        className={appear(index + 1)}>
+                        <Image
+                            className={'rounded rounded-lg'}
+                            width={200} height={65}
+                            alt={'Logo'}
+                            src={img}
+                        />
+                    </div>
+                ))}
             </div>
         </div>
     )

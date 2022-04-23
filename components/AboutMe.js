@@ -1,5 +1,13 @@
 import {AboutMeTab} from "./AboutMeTab";
 import {FavoriteMix} from "./FavoriteMix";
+import js from "../static/js.png";
+import react from "../static/react.png";
+import next from "../static/next.png";
+import firebase from "../static/firebase.png";
+import mongo from "../static/mongodb.png";
+import redux from "../static/redux.png";
+import node from "../static/node.jpeg";
+import typescript from "../static/typescript.png";
 
 export const AboutMe = () => {
     return (
@@ -14,7 +22,7 @@ export const AboutMe = () => {
 
             {/*=====FavoriteMix======*/}
 
-            <FavoriteMix/>
+            <FavoriteMix imgArr={[js, react, next, mongo, firebase, redux, node, typescript]}/>
 
             {/*=====FavoriteMix======*/}
 
