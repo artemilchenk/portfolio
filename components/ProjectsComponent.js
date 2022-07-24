@@ -1,6 +1,6 @@
 import Image from "next/image";
 import img1Ref from "../static/rss.png";
-import img2Ref from "../static/rumor.png";
+import img2Ref from "../static/portfolio.png";
 import img3Ref from "../static/snake.png";
 import {RoundComponent} from "./RoundComponent";
 import {useEffect, useState} from "react";

@@ -15,7 +15,7 @@ export const MyInfo = ({spark}) => {
             <div className={'col-span-4 text-center md:col-span-2 md:text-center mt-5 md:mt-0'}>
                 <Image
                     className={'rounded rounded-full'}
-                    width={200} height={220}
+                    width={200} height={200}
                     alt={'MyPicture'}
                     src={iam}
                 />

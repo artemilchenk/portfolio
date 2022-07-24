@@ -16,7 +16,7 @@ export  const RoundComponent =({direction, photo})=>{
                 <div
                     className={'scroll-none absolute z-30 top-0 left-0 flex w-48 h-48 md:w-96 md:h-96 overflow-scroll rounded-full border border-red-900 bg-black'}>
                     <Link
-                        href={`${direction === 0 ? 'https://node-express-client-production.vercel.app/' : direction === 45 ? 'https://www.rumorr.live' : 'https://www.snaaake.xyz'}`}>
+                        href={`${direction === 0 ? 'https://node-express-client-production.vercel.app/' : direction === 45 ? 'https://www.artemilchenko.com/' : 'https://www.snaaake.xyz'}`}>
                         <a>
                             <div className={'cursor-pointer w-48 h-48 md:w-96 md:h-96 '}>
                                 <Image objectFit={'cover'} width={400} height={400} src={photo}
