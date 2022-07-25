@@ -5,6 +5,7 @@ import {Header} from "../components/Header";
 import {AboutMe} from "../components/AboutMe";
 import {Footer} from "../components/Footer";
 import {ProjectsComponent} from "../components/ProjectsComponent";
+import {MapComponent} from "../components/Map";
 
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
     const [sideBarPre, setSideBarPre] = useState(false)
 
     return (
-        <div className={'relative overflow-hidden'}>
+        <div className={'overflow-hidden'}>
+
             <Head>
                 <title>artemilchenko</title>
                 <link rel="icon" href="/favicon.ico"/>
@@ -27,19 +29,18 @@ export default function Home() {
                 {/*=====SideBar======*/}
                 <SideBar sideBar={sideBar} setSideBar={setSideBar} sideBarPre={sideBarPre}
                          setSideBarPre={setSideBarPre}/>
-                {/*=====SideBar======*/}
 
                 {/*=====Header======*/}
                 <Header setSideBarPre={setSideBarPre} setSideBar={setSideBar}/>
-                {/*=====Header======*/}
 
                 {/*======aboutMe=====*/}
                 <AboutMe/>
-                {/*======aboutMe======*/}
 
                 {/*======MyProjects=====*/}
                 <ProjectsComponent />
-                {/*======MyProjects=====*/}
+
+                {/*======Map=====*/}
+                <MapComponent/>
             </div>
 
             <Footer/>
